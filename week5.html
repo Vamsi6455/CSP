@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 5 - Activity</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allow wrapping */
+  gap: 1rem;        /* spacing between items */
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;   /* wrap items if needed */
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.2rem;       /* spacing between links */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #00eaff;
+}
+
+    .container {
+      max-width: 900px;
+      margin: 5rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    th {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #00eaff;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn {
+      padding: 0.7rem 1.5rem;
+      background: rgba(255, 255, 255, 0.12);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+
+    .btn:hover {
+      background: rgba(0, 255, 255, 0.2);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<nav class="navbar">
+    <ul>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="abstract.html">Abstract</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="survey-data.html">Survey Data</a>
+        <a href="conclusion.html">Conclusion</a>
+        <a href="activity-log.html">Activity Log</a>
+        <a href="questionnaire.html">Questionnaire</a>
+        <a href="pictures.html">Pictures</a>
+        <a href="members.html">Members</a>
+      </nav>
+    </ul>
+  </nav>
+
+<div class="container">
+  <h1>WEEK – 5: Learning Technology</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>DAY</th>
+        <th>ACTIVITY</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>DAY - 1</td>
+        <td>Learning User Interface Components in HTML – Label, Text Field, Button</td>
+      </tr>
+      <tr>
+        <td>DAY – 2</td>
+        <td>Learning User Interface Components in HTML – Checkbox, List</td>
+      </tr>
+      <tr>
+        <td>DAY - 3</td>
+        <td>Learning User Interface Components in HTML – Dropdown list, Text Area</td>
+      </tr>
+      <tr>
+        <td>DAY - 4</td>
+        <td>Learning about Submit button and Refresh button in HTML</td>
+      </tr>
+      <tr>
+        <td>DAY - 5</td>
+        <td>Learning User Interface Components in HTML – Form Method, Post method, Get method</td>
+      </tr>
+      <tr>
+        <td>DAY - 6</td>
+        <td>Learning and Understanding Basics of JavaScript, Variables, Data Types, Functions, etc.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="buttons">
+    <a href="week4.html" class="btn">← Previous</a>
+    <a href="week6.html" class="btn">Next →</a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 50 },
+      color: { value: "#ffffff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 3, random: true },
+      line_linked: {
+        enable: true,
+        distance: 120,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2,
+        out_mode: "bounce"
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "grab" }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+
+</body>
+</html>

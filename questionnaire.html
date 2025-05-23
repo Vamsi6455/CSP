@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Security Questionnaire</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: rgba(20, 30, 48, 0.9);
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) scaleX(0);
+      width: 80%;
+      height: 2px;
+      background: cyan;
+      transition: transform 0.3s ease;
+    }
+
+    nav a:hover::after {
+      transform: translateX(-50%) scaleX(1);
+    }
+
+    nav a:hover {
+      color: cyan;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.3);
+      backdrop-filter: blur(14px);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 40px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px cyan; }
+      to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00e5ff; }
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      margin-top: 8px;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      outline: none;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #aaa;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 14px;
+      font-size: 17px;
+      font-weight: bold;
+      background: linear-gradient(to right, #00f2fe, #4facfe);
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00e5ff;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="abstract.html">Abstract</a></li>
+      <li><a href="introduction.html">Introduction</a></li>
+      <li><a href="survey-data.html">Survey Data</a></li>
+      <li><a href="conclusion.html">Conclusion</a></li>
+      <li><a href="activity-log.html">Activity Log</a></li>
+      <li><a href="questionnaire.html">Questionnaire</a></li>
+      <li><a href="pictures.html">Pictuers</a></li>
+      <li><a href="members.html">Members</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1 data-aos="zoom-in">Questionnaire</h1>
+    <form>
+      <!-- Each field wrapped in a div with AOS animation -->
+      <div data-aos="fade-right"><label>1. What is your name Sir/Madam?</label><input type="text" placeholder="Your name" required></div>
+      <div data-aos="fade-left"><label>2. What is your Aadhar number?</label><input type="text" placeholder="Aadhar number" required></div>
+      <div data-aos="fade-up"><label>3. What is your mobile number?</label><input type="text" placeholder="Mobile number" required></div>
+      <div data-aos="fade-down"><label>4. What is your address?</label><textarea rows="2" placeholder="Your address"></textarea></div>
+      <div data-aos="fade-right"><label>5. Are you aware of Cyber Attack?</label><select><option>Yes</option><option>No</option></select></div>
+      <div data-aos="fade-left"><label>6. Has any Cyber Attack happened to you before?</label><select><option>Yes</option><option>No</option></select></div>
+      <div data-aos="fade-up"><label>7. Do you use strong, unique passwords for different accounts?</label><input type="text" placeholder="Yes / No / Sometimes"></div>
+      <div data-aos="fade-down"><label>8. How often do you update your passwords?</label><input type="text" placeholder="e.g., Every 3 months"></div>
+      <div data-aos="fade-right"><label>9. Do you use two factor authentication?</label><input type="text" placeholder="Yes / No"></div>
+      <div data-aos="fade-left"><label>10. Have you attended a Cyber Security awareness session?</label><input type="text" placeholder="Yes / No"></div>
+      <div data-aos="fade-up"><label>11. How do you react to suspicious emails or messages?</label><textarea rows="2" placeholder="Your response"></textarea></div>
+      <div data-aos="fade-down"><label>12. How often do you use the internet?</label><input type="text" placeholder="e.g., Daily / Weekly"></div>
+      <div data-aos="fade-up"><label>13. Do you share personal details on social media?</label><input type="text" placeholder="Yes / No / Sometimes"></div>
+      
+      <div data-aos="zoom-in-up"><button type="submit">Submit</button></div>
+    </form>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 120,
+      duration: 900,
+      once: true,
+    });
+  </script>
+</body>
+</html>

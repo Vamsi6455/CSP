@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Introduction | Cyber Security Awareness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      color: #ffffff;
+      background: url('hackereyyy.png') no-repeat center center fixed;
+      background-size: cover;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 4px;
+      margin-top: 59px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #00ffff;
+      border-bottom: 2px solid #00ffff;
+    }
+    .futuristic-navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  padding: 10px ;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.futuristic-navbar ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.futuristic-navbar ul li a {
+  color: #00faff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(0, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+}
+
+.futuristic-navbar ul li a:hover {
+  background: #00faff;
+  color: black;
+  box-shadow: 0 0 20px #00faff, 0 0 40px #00faff;
+  transform: scale(1.1);
+}
+    section {
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 1s ease;
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.65);
+      border: 1px solid #0ff;
+      border-radius: 15px;
+      box-shadow: 0 0 25px #00ffff44;
+    }
+
+    section.reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #0ff;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin-left: 2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .back-home {
+      display: block;
+      margin: 4rem auto 2rem;
+      text-align: center;
+      padding: 1rem 2rem;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+      background: transparent;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      transition: 0.3s;
+      width: fit-content;
+    }
+
+    .back-home:hover {
+      background: #00ffff;
+      color: #000;
+      box-shadow: 0 0 10px #00ffff, 0 0 30px #00ffff66;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        margin: 2rem 1rem;
+        padding: 1rem;
+      }
+
+      header {
+        font-size: 1.8rem;
+        margin-top: 75px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav class="futuristic-navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="abstract.html">Abstract</a></li>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="survey-data.html">Survey Data</a></li>
+          <li><a href="conclusion.html">Conclusion</a></li>
+          <li><a href="activity-log.html">Activity Log</a></li>
+          <li><a href="questionnaire.html">Questionnaire</a></li>
+          <li><a href="pictures.html">Pictures</a></li>
+          <li><a href="members.html">Members</a></li>
+        </ul>
+      </nav>
+  <header>Introduction</header>
+  <section>
+    <h2>Overview</h2>
+    <p>In an era dominated by technology, cyber-attacks have emerged as one of the most pressing global concerns. The increasing dependence on the internet, cloud computing, and digital transactions has made cybersecurity awareness a necessity rather than a choice. Cyber-attacks range from simple phishing attempts to complex, state-sponsored hacking operations, affecting both individuals and large corporations. Despite the advancement of cybersecurity measures, attackers continuously evolve their tactics, making it essential for people to stay informed about potential threats and security practices.</p>
+    <p>This paper discusses various types of cyber-attacks, the significance of cybersecurity awareness, and strategies to mitigate risks. It also highlights the role of governments, educational institutions, and organizations in promoting cybersecurity education.</p>
+  </section>
+
+  <section>
+    <h2>Common Types of Cyber Attacks</h2>
+    <ul>
+      <li><strong>Phishing Attacks:</strong> Fraudulent messages that trick individuals into revealing sensitive information.</li>
+      <li><strong>Malware Attacks:</strong> Viruses, worms, trojans, and ransomware that damage or steal data.</li>
+      <li><strong>DoS & DDoS Attacks:</strong> Flooding systems with traffic to disrupt services.</li>
+      <li><strong>Man-in-the-Middle (MitM):</strong> Intercepting communication to steal/manipulate data.</li>
+      <li><strong>SQL Injection:</strong> Injecting malicious code to access databases.</li>
+      <li><strong>Zero-Day Exploits:</strong> Exploiting unknown software vulnerabilities.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Importance of Cyber Security Awareness</h2>
+    <ul>
+      <li>Identifying phishing scams</li>
+      <li>Recognizing suspicious links</li>
+      <li>Using strong, unique passwords</li>
+      <li>Keeping software updated</li>
+      <li>Enabling multi-factor authentication</li>
+      <li>Practicing safe browsing</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Role of Education and Training</h2>
+    <ul>
+      <li><strong>Cybersecurity Training:</strong> For employees and the public</li>
+      <li><strong>Workshops & Seminars:</strong> Included in school curriculum</li>
+      <li><strong>Public Campaigns:</strong> Raise awareness of new threats</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Best Practices</h2>
+    <ul>
+      <li>Use strong passwords and password managers</li>
+      <li>Enable multi-factor authentication</li>
+      <li>Keep systems updated</li>
+      <li>Be cautious with emails and links</li>
+      <li>Secure Wi-Fi networks</li>
+      <li>Backup important data regularly</li>
+      <li>Use firewalls and antivirus software</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Advantages of Cyber Awareness</h2>
+    <ul>
+      <li>Enhanced security and identity protection</li>
+      <li>Prevention of financial losses</li>
+      <li>Stronger password practices</li>
+      <li>Safe browsing habits</li>
+      <li>Improved workplace cybersecurity</li>
+      <li>Better crisis response and recovery</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Disadvantages of Cyber Awareness</h2>
+    <ul>
+      <li>Increased paranoia and anxiety</li>
+      <li>Time-consuming security practices</li>
+      <li>False sense of security</li>
+      <li>Financial cost of tools and training</li>
+      <li>Complexity for non-tech-savvy users</li>
+      <li>Over-reliance on security software</li>
+    </ul>
+  </section>
+
+  <a href="index.html" class="back-home">← Back to Home</a>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal");
+        }
+      });
+    }, { threshold: 0.15 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>

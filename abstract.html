@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abstract | Cyber Security</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: url('binary-3441010.jpg') no-repeat center center/cover;
+      overflow-x: hidden;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 15px 0;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #00ffe7;
+      text-decoration: none;
+      font-size: 1.05rem;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background: #00ffe7;
+      transition: 0.4s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .glass-container {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 18px;
+      border: 1px solid rgba(0, 255, 255, 0.3);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+      position: relative;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .glass-container::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 20px;
+      background: linear-gradient(45deg, #00f7ff, #0077ff, #00ffbf, #00f7ff);
+      background-size: 300% 300%;
+      z-index: -1;
+      animation: gradientBorder 6s ease infinite;
+      filter: blur(12px);
+    }
+
+    @keyframes gradientBorder {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      color: #065243;
+      text-shadow: 0 0 10px #12d5ab, 0 0 25px #0ac7aa;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      text-align: justify;
+      color: #e3faff;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    nav a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ffe7, 0 0 10px #00ffe7;
+}
+
+.glass-container:hover {
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.5);
+  transition: 0.4s ease;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00ffe7;
+  border: 2px solid #00ffe7;
+  border-radius: 30px;
+  background: transparent;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background: #00ffe7;
+  color: #000;
+  box-shadow: 0 0 20px #00ffe7;
+}
+
+.back-button::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: rgba(0, 255, 231, 0.2);
+  top: -10%;
+  left: -10%;
+  transform: rotate(45deg);
+  pointer-events: none;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.back-button:hover::before {
+  opacity: 1;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="abstract.html">Abstract</a>
+    <a href="introduction.html">Introduction</a>
+    <a href="survey-data.html">Survey Data</a>
+    <a href="conclusion.html">Conclusion</a>
+    <a href="activity-log.html">Activity Log</a>
+    <a href="questionnaire.html">Questionnaire</a>
+    <a href="pictures.html">Pictures</a>
+    <a href="members.html">Members</a>
+  </nav>
+
+  <div class="glass-container" id="abstract">
+    <h1>Abstract</h1>
+    <p>
+      Cybersecurity has become an essential aspect of modern life as the digital landscape expands rapidly.
+      Cyber-attacks pose a serious threat to individuals, organizations, and governments, leading to financial losses, identity theft, and breaches of sensitive information.
+      Awareness of cyber threats enables individuals and organizations to implement preventive measures that reduce the risks associated with cybercrime.
+      This paper explores the importance of cybersecurity awareness, common types of cyber-attacks, the role of education and training in mitigating risks, and the best practices that individuals and businesses can adopt to enhance their cybersecurity posture.
+      By promoting awareness and proactive measures, society can build a more secure digital environment and protect critical information from malicious cyber activities.
+    </p>
+  </div>
+  <a href="index.html" class="back-button">Back to Home</a>
+  <script>
+    ScrollReveal().reveal('.glass-container', {
+      duration: 1200,
+      origin: 'bottom',
+      distance: '50px',
+      easing: 'ease-out',
+      reset: false
+    });
+  </script>
+</body>
+</html>

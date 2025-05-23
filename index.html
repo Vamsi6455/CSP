@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSP | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: url('cyber-security-7996399.gif') no-repeat center center fixed;
+      backdrop-filter: blur(5px);
+      background-size: cover;
+      overflow-x: hidden;
+      color: white;
+    }
+
+    /* === Header === */
+    .college-header {
+      text-align: center;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.95), rgba(0, 255, 255, 0.925), rgba(0, 0, 0, 0.95));
+      color: black;
+      padding: 8px;
+      font-size: 12px;
+    }
+
+    .college-header h1 {
+      font-size: 16px;
+      color: red;
+      margin: 3px 0;
+    }
+
+    .college-header h2 {
+      font-size: 13px;
+    }
+
+    .college-header p {
+      font-size: 11px;
+      color: #003399;
+    }
+
+    .logo {
+      height: 60px;
+      margin-bottom: 5px;
+    }
+
+    /* === Navbar === */
+    nav {
+      background: rgba(0, 0, 0, 0.185);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav a {
+      color: #ffffff;
+      font-weight: 500;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+      padding: 6px 10px;
+    }
+
+    nav a::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0%;
+      height: 2px;
+      background: cyan;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover {
+      color: cyan;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    /* === Main Content === */
+    .main-content {
+      height: calc(100vh - 200px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .main-content h1 {
+      font-size: 56px;
+      font-family: 'Orbitron', sans-serif;
+      color: #f9e8e8;
+      letter-spacing: 3px;
+      text-shadow: 0 0 8px cyan, 0 0 15px #00ffff;
+      animation: glitch 2s infinite;
+    }
+    span{
+      color: red;
+    }
+
+    .main-content p {
+      font-size: 22px;
+      margin-top: 10px;
+      color: #00ffee;
+      animation: fadePulse 3s ease-in-out infinite;
+      text-shadow: 0 0 10px #00ffe0;
+    }
+
+    .main-content .btn {
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: transparent;
+      border: 2px solid cyan;
+      border-radius: 30px;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .main-content .btn::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: cyan;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.4s ease, height 0.4s ease;
+      z-index: 0;
+      opacity: 0.3;
+    }
+
+    .main-content .btn:hover::before {
+      width: 300%;
+      height: 300%;
+    }
+
+    .main-content .btn:hover {
+      color: black;
+      background: rgba(0, 255, 255, 0.2);
+      box-shadow: 0 0 20px cyan;
+      z-index: 1;
+    }
+
+    /* === Animations === */
+    @keyframes glitch {
+      0% { text-shadow: 0 0 5px cyan; }
+      20% { text-shadow: -2px 0 red, 2px 0 blue; }
+      40% { text-shadow: 2px 2px #ff00c8; }
+      60% { text-shadow: -1px -1px #00ffff; }
+      80% { text-shadow: 1px 1px cyan; }
+      100% { text-shadow: 0 0 5px cyan; }
+    }
+
+    @keyframes fadePulse {
+      0%, 100% { opacity: 1; text-shadow: 0 0 10px #00ffe0; }
+      50% { opacity: 0.7; text-shadow: 0 0 20px #00ffc8; }
+    }
+
+    @media (max-width: 768px) {
+      .main-content h1 {
+        font-size: 38px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .main-content p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- === Header === -->
+  <div class="college-header">
+    <img src="logo7.png" alt="Logo" class="logo"><br>
+    <h1>GEETHANJALI INSTITUTE OF SCIENCE AND TECHNOLOGY</h1>
+    <h2>A unit of USHODAYA EDUCATIONAL SOCIETY</h2>
+    <p><em>Approved by AICTE, New Delhi & Permanently Affiliated to JNTUA, Ananthapuram</em></p>
+    <p>NAAC 'A' Grade Accredited Institution, An ISO 9001:2015 certified Institution</p>
+    <p>Recognized under Sec. 2(f) & 12(B) of UGC Act, 1956</p>
+    <p>3rd Mile, Bombay Highway, Gangavaram(V), Kovur(M), SPSR Nellore(Dt) 524137</p>
+  </div>
+
+  <!-- === Navbar === -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="abstract.html">Abstract</a>
+    <a href="introduction.html">Introduction</a>
+    <a href="survey-data.html">Survey Data</a>
+    <a href="conclusion.html">Conclusion</a>
+    <a href="activity-log.html">Activity Log</a>
+    <a href="questionnaire.html">Questionnaire</a>
+    <a href="pictures.html">Pictures</a>
+    <a href="members.html">Members</a>
+  </nav>
+
+  <!-- === Main Section === -->
+  <section class="main-content">
+    <h1>COMMUNITY<span>SERVICE</span>PROJECT</h1>
+    <p>Awareness of Cyber Security</p>
+    <a href="abstract.html">
+    <button class="btn">JOIN US</button>
+    </a>
+  </section>
+
+</body>
+</html>
